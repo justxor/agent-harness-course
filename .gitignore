@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+examples/_workspace/
+examples/_data/
+examples/capstone/_data/
+.env
