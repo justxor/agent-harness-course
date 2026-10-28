@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/banner.svg" alt="Agent Harness Course 2026 — построй своего AI-агента с нуля" width="100%">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/уровень-с_нуля-ff8a3d" alt="уровень">
   <img src="https://img.shields.io/badge/срок-8_недель-ffc145" alt="срок">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB" alt="Python">
@@ -8,7 +12,7 @@
 
 # 🧠 Agent Harness Course 2026 — как построить своего AI-агента с нуля
 
-> Пошаговый курс на ~8 недель (1–2 часа в день): от одного запроса к LLM до агента с инструментами, памятью, субагентами, защитой и тестами — и финального проекта.
+> Пошаговый курс на ~8 недель (1–2 часа в день): от одного запроса к LLM до агента с инструментами, памятью, субагентами, защитой и тестами — и финального проекта, обучающего агента по мотивам [LearnHarness](https://github.com/amosblomqvist/learnharness).
 > Свой учебный харнес на чистом Python без единой зависимости, 7 запускаемых уроков, финальный проект, 19 тестов и разбор архитектуры настоящего open-source агента.
 [Ai Ml](https://t.me/+2ijKywQaDyo1YzIy) — материал переработан, структурирован и дополнен кодом, схемами и справочниками.
 
@@ -615,6 +619,7 @@ Computer use / browser use: модель видит скриншоты или д
 ```
 agent-harness-course/
 ├── README.md                     ← этот курс
+├── assets/banner.svg             ← обложка
 ├── harness/                      ← учебный харнес, 0 зависимостей
 │   ├── llm.py                    ← провайдеры: Scripted, OpenAI-совместимые, Anthropic; стриминг
 │   ├── tools.py                  ← @tool, JSON Schema, валидация, песочница Workspace
