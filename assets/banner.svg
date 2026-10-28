@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0b1f"/>
+      <stop offset="1" stop-color="#16123a"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#2a2457" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8b7bff"/>
+      <stop offset="1" stop-color="#3ee0c5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b7bff" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#8b7bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#3a2f8f"/>
+      <stop offset="1" stop-color="#1a1545"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3ee0c5"/>
+    </marker>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#grid)" opacity="0.55"/>
+  <circle cx="1000" cy="320" r="300" fill="url(#glow)"/>
+
+  <!-- ===== Harness around the model (original illustration) ===== -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" text-anchor="middle">
+    <!-- outer harness ring -->
+    <circle cx="1000" cy="320" r="190" fill="none" stroke="#3b3480" stroke-width="2"/>
+    <circle cx="1000" cy="320" r="190" fill="none" stroke="url(#accent)" stroke-width="3" stroke-dasharray="4 12" stroke-linecap="round"/>
+
+    <!-- agent loop arrows -->
+    <g fill="none" stroke="#3ee0c5" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" opacity="0.9">
+      <path d="M1052 210 A118 118 0 0 1 1112 290"/>
+      <path d="M1100 380 A118 118 0 0 1 1030 433"/>
+      <path d="M948 430 A118 118 0 0 1 885 350"/>
+      <path d="M898 258 A118 118 0 0 1 960 207"/>
+    </g>
+
+    <!-- model core -->
+    <circle cx="1000" cy="320" r="70" fill="url(#core)" stroke="#8b7bff" stroke-width="4"/>
+    <text x="1000" y="318" font-size="30" font-weight="800" fill="#ffffff">LLM</text>
+    <text x="1000" y="344" font-size="14" fill="#b9b3ff">модель</text>
+
+    <!-- satellites -->
+    <g font-size="14" font-weight="600" fill="#e8e6ff">
+      <g>
+        <rect x="934" y="104" width="132" height="40" rx="12" fill="#1c1748" stroke="#3ee0c5" stroke-width="2.5"/>
+        <text x="1000" y="129">инструменты</text>
+      </g>
+      <g>
+        <rect x="1108" y="194" width="132" height="40" rx="12" fill="#1c1748" stroke="#8b7bff" stroke-width="2.5"/>
+        <text x="1174" y="219">контекст</text>
+      </g>
+      <g>
+        <rect x="1108" y="406" width="132" height="40" rx="12" fill="#1c1748" stroke="#8b7bff" stroke-width="2.5"/>
+        <text x="1174" y="431">память</text>
+      </g>
+      <g>
+        <rect x="934" y="496" width="132" height="40" rx="12" fill="#1c1748" stroke="#3ee0c5" stroke-width="2.5"/>
+        <text x="1000" y="521">защита</text>
+      </g>
+      <g>
+        <rect x="760" y="406" width="132" height="40" rx="12" fill="#1c1748" stroke="#8b7bff" stroke-width="2.5"/>
+        <text x="826" y="431">субагенты</text>
+      </g>
+      <g>
+        <rect x="760" y="194" width="132" height="40" rx="12" fill="#1c1748" stroke="#8b7bff" stroke-width="2.5"/>
+        <text x="826" y="219">evals</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== Text ===== -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="80" y="118" font-size="22" font-weight="600" fill="#3ee0c5" letter-spacing="4">ОТКРЫТЫЙ КУРС · 2026</text>
+    <text x="78" y="200" font-size="76" font-weight="800" fill="#ffffff">Agent Harness</text>
+    <text x="78" y="282" font-size="76" font-weight="800" fill="url(#accent)">Course 2026</text>
+    <text x="80" y="340" font-size="27" fill="#cfcbf2">Построй своего AI-агента с нуля:</text>
+    <text x="80" y="376" font-size="27" fill="#cfcbf2">цикл, инструменты, память, защита</text>
+  </g>
+
+  <!-- ===== Roadmap steps ===== -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <path d="M100 460 H680" stroke="#3b3480" stroke-width="4"/>
+    <path d="M100 460 H680" stroke="url(#accent)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <g fill="#1a1545" stroke="#8b7bff" stroke-width="4">
+      <circle cx="100" cy="460" r="14"/><circle cx="183" cy="460" r="14"/><circle cx="266" cy="460" r="14"/>
+      <circle cx="349" cy="460" r="14"/><circle cx="431" cy="460" r="14"/><circle cx="514" cy="460" r="14"/>
+      <circle cx="597" cy="460" r="14"/><circle cx="680" cy="460" r="14"/>
+    </g>
+    <g fill="#3ee0c5" font-size="14" font-weight="800">
+      <text x="100" y="465">1</text><text x="183" y="465">2</text><text x="266" y="465">3</text><text x="349" y="465">4</text>
+      <text x="431" y="465">5</text><text x="514" y="465">6</text><text x="597" y="465">7</text><text x="680" y="465">8</text>
+    </g>
+    <g fill="#e8e6ff" font-size="14">
+      <text x="100" y="502">API</text>
+      <text x="183" y="502">Цикл</text>
+      <text x="266" y="502">Контекст</text>
+      <text x="349" y="502">Память</text>
+      <text x="431" y="502">Субагенты</text>
+      <text x="514" y="502">Защита</text>
+      <text x="597" y="502">Evals</text>
+      <text x="680" y="502">Архитектура</text>
+    </g>
+    <g fill="#8f88c9" font-weight="400" font-size="12">
+      <text x="100" y="522">токены, стрим</text>
+      <text x="183" y="522">tool calling</text>
+      <text x="266" y="522">компакция</text>
+      <text x="349" y="522">сессии</text>
+      <text x="431" y="522">фон</text>
+      <text x="514" y="522">injection</text>
+      <text x="597" y="522">тесты, цена</text>
+      <text x="680" y="522">LearnHarness</text>
+    </g>
+  </g>
+
+  <text x="80" y="590" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#7d77b8">8 недель · Python без зависимостей · 7 уроков · финальный проект — обучающий агент</text>
+</svg>
